@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>アカウント登録とログイン</title>
+</head>
+
+<body>
+  <h1>アカウント登録</h1>
+  <form id="registrationForm">
+     <input type="text" id="username" placeholder="ユーザー名" required>
+     <input type="password" id="password" placeholder="パスワード" required>
+     <button type="submit">登録</button>
+  </form>
+  <h1>ログイン</h1>
+  <form id="loginForm">
+     <input type="text" id="loginUsername" placeholder="ユーザー名" required>
+     <input type="password" id="loginPassword" placeholder="パスワード" required>
+     <button type="submit">ログイン</button>
+  </form>
+
+
+  <div id="welcomeMessage" style="display: none;">
+    <h2>ようこそ！</h2>
+    <p>ログインに成功しました！</p>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
