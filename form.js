@@ -9,10 +9,9 @@ const age = document.getElementById("age").value;
 
 if (lastName && firstName && age) {
     //ユーザー情報をローカルストレージに保存
-    localStorage["username"] = localStorage[{"lastName" : lastName , "firstName" : firstName , "age" : age}]
-    // localStorage.setItem("lastName" , lastName);
-    // localStorage.setItem("firstName" , firstName);
-    // localStorage.setItem("age" , age);
+    localStorage.setItem("lastName" , lastName);
+    localStorage.setItem("firstName" , firstName);
+    localStorage.setItem("age" , age);
     alert("登録が完了しました！ログイン画面に戻ります！")
     window.location.href = "index.html"
 } else {
