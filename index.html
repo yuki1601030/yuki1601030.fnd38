@@ -4,29 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>アカウント登録とログイン</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  <h1>アカウント登録</h1>
+  <h1>市民パレット🎨</h1>
+  <div class="firstPage">
+  <h2>アカウント登録</h2>
   <form id="registrationForm">
      <input type="text" id="username" placeholder="ユーザー名" required>
      <input type="password" id="password" placeholder="パスワード" required>
      <button type="submit">登録</button>
   </form>
-  <h1>ログイン</h1>
+  <h2>ログイン</h2>
   <form id="loginForm">
      <input type="text" id="loginUsername" placeholder="ユーザー名" required>
      <input type="password" id="loginPassword" placeholder="パスワード" required>
      <button type="submit">ログイン</button>
   </form>
+  </div>
 
 
   <div id="welcomeMessage" style="display: none;">
-    <h2>ようこそ！</h2>
+    <h3>ようこそ！</h3>
     <p>ログインに成功しました！</p>
   </div>
 
-  <script src="script.js"></script>
+  <script src="index.js"></script>
   
 </body>
 
