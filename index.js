@@ -20,6 +20,8 @@ if (username && password) {
 }
 });
 
+
+
 document.getElementById("loginForm").addEventListener("submit" , 
             function(event) {
               event.preventDefault();//フォームの送信を止める(jsで処理したいから)
