@@ -3,19 +3,36 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="theme-color" content="#000000">
-  <script type="text/javascript" src="home.js"></script>
+  <title>市民パレット🎨</title>
+  <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
-  <h1>DIG プログラミング基礎へようこそ！</h1>
-  <h2>Mac をお使いの方は、 <font color="blue"> Cmd + Option + J</font><br>
-    Windows/Linux をお使いの方は、 <font color="blue"> Control+Shift+J</font> <br>
-    をクリックして、デベロッパーツールを開いてください。</h2>
-  <h2>下記にユニコーンの画像が表示されていれば成功です！</h2>
-  <img src="https://cdn.dribbble.com/users/1281272/screenshots/4515441/unicorn.gif">
-  <h3>30分悩んで進まなくなったら…helpチャンネルで質問してみましょう！</h3>
+  <h1>市民パレット🎨</h1>
+  <div class="tab-contain">
+    <div class="tabs">
+      <button class="tab-button" onclick="showTab('tab1')">日本</button>
+      <button class="tab-button" onclick="showTab('tab2')">東海</button>
+      <button class="tab-button" onclick="showTab('tab3')">愛知</button>
+      <button class="tab-button" onclick="showTab('tab4')">北名古屋</button>
+    </div>
+    <div class="tab-content">
+      <div id="tab1" class="tab">
+        <div class="container">
+          <div id="card-container">
+            <div class="card" id="card">これはカードの内容です。</div>
+          </div>
+        <div class="buttons">
+            <button id="bad-button">Bad</button>
+            <button id="good-button">Good</button>
+        </div>
+       </div>
+      </div>
+      <div id="tab2" class="tab" style="display: none;">これはタブ2の内容です。</div>
+      <div id="tab3" class="tab" style="display: none;">これはタブ3の内容です。</div>
+      <div id="tab4" class="tab" style="display: none;">これはタブ4の内容です。</div>
+    </div>
+  </div>
+  <script src="home.js"></script>
 </body>
-
 </html>
