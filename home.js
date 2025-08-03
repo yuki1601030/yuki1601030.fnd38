@@ -53,6 +53,7 @@ if (idea && (getCurrentTab() ==="tab1")) {
     alert("追加完了！")
 } else if(idea && (getCurrentTab() ==="tab4")) {
     localStorage.setItem(randomNumber(151,200) , idea);
+    alert("追加完了！")
 } else {
     alert("未入力です")
 }
@@ -118,4 +119,6 @@ function goodswipe() {
 document.getElementById("bad-button1").addEventListener("click" , badswipe);
 document.getElementById("good-button1").addEventListener("click" , badswipe);
 // bad good ボタンで次の内容に切り替え
+
+
 
