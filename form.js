@@ -1,3 +1,6 @@
+'use strict'
+// 1行目に記載している 'use strict' は削除しないでください
+
 document.getElementById("information").addEventListener("submit" , 
             function(event) {
               event.preventDefault();//フォームの送信を止める(jsで処理したいから)
