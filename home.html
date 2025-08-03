@@ -20,19 +20,62 @@
       <div id="tab1" class="tab">
         <div class="container">
           <div id="card-container">
-            <div class="card" id="card">これはカードの内容です。</div>
+            <div class="card" id="card1">これはカード1の内容です。</div>
           </div>
         <div class="buttons">
-            <button id="bad-button">Bad</button>
-            <button id="good-button">Good</button>
+            <button type="submit" id="bad-button1">Bad</button>
+            <button type="submit" id="good-button1">Good</button>
         </div>
-       </div>
+        </div>
       </div>
-      <div id="tab2" class="tab" style="display: none;">これはタブ2の内容です。</div>
-      <div id="tab3" class="tab" style="display: none;">これはタブ3の内容です。</div>
-      <div id="tab4" class="tab" style="display: none;">これはタブ4の内容です。</div>
+      <div id="tab2" class="tab" style="display: none;">
+        <div class="container">
+          <div id="card-container">
+            <div class="card" id="card2">これはカード2の内容です。</div>
+          </div>
+        <div class="buttons">
+            <button id="bad-button2">Bad</button>
+            <button id="good-button2">Good</button>
+        </div>
+        </div>
+      </div>
+      <div id="tab3" class="tab" style="display: none;">
+        <div class="container">
+          <div id="card-container">
+            <div class="card" id="card3">これはカード3の内容です。</div>
+          </div>
+        <div class="buttons">
+            <button id="bad-button3">Bad</button>
+            <button id="good-button3">Good</button>
+        </div>
+        </div>
+      </div>
+      <div id="tab4" class="tab" style="display: none;">
+        <div class="container">
+          <div id="card-container">
+            <div class="card" id="card4">これはカード4の内容です。</div>
+          </div>
+        <div class="buttons">
+            <button id="bad-button4">Bad</button>
+            <button id="good-button4">Good</button>
+        </div>
+        </div>
+      </div>
     </div>
   </div>
+    <div class="form">
+      <select name="tab_select">
+        <option value="tab1">日本</option>
+        <option value="tab2">東海</option>
+        <option value="tab3">愛知</option>
+        <option value="tab4">北名古屋</option>
+      </select>
+      <form id="form-submit">
+        <input type="text" id="form-inner" placeholder="入力内容" required>
+        <button type="submit">送信</button>
+      </form>
+    </div>
+
   <script src="home.js"></script>
 </body>
 </html>
